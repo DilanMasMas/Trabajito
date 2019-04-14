@@ -1,0 +1,39 @@
+<ion-header>
+    <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-back-button>
+      </ion-back-button>
+        </ion-buttons>
+    <ion-title>
+      32 Horas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content> 
+    
+    <h3>Solemnes</h3><br>
+ 
+    <ion-input placeholder="EPE1" [(ngModel)]="EPE1" type="number" color="light"></ion-input>
+    <ion-input placeholder="EPE2" [(ngModel)]="EPE2" type="number" color="light"></ion-input>
+    <ion-input placeholder="EPE3" [(ngModel)]="EPE3" type="number" color="light"></ion-input>
+
+  <ion-label>Evaluaciones</ion-label>
+
+
+    <ion-input placeholder="EVA1" [(ngModel)]="EVA1" type="number" color="light"></ion-input>
+    <ion-input placeholder="EVA2" [(ngModel)]="EVA2" type="number" color="light"></ion-input>
+
+
+  <ion-label>Examen</ion-label>
+
+    <ion-input placeholder="Examen" [(ngModel)]="EX" type="number" color="light"></ion-input>
+ 
+    <ion-button color="primary" (click)="Calculo()">Calcular</ion-button>
+    <ion-button color="primary" (click)="CalculoEx()">Calcular+Ex</ion-button>
+
+ 
+  <!--<ion-item>
+    <ion-label>{{Calculo() | number:"1.0-2"}}</ion-label>
+  </ion-item>-->
+</ion-content>

@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      64 Horas
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+    <ion-label>Solemnes</ion-label>
+  
+  <ion-item>
+    <ion-input placeholder="EPE1" [(ngModel)]="EPE1"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="EPE2" [(ngModel)]="EPE2"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="EPE3" [(ngModel)]="EPE3"></ion-input>
+  </ion-item>
+
+  <ion-label>Evaluaciones</ion-label>
+
+  <ion-item>
+    <ion-input placeholder="EVA1" [(ngModel)]="EVA1"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-input placeholder="EVA2" [(ngModel)]="EVA2"></ion-input>
+  </ion-item>
+
+  <ion-label>Examen</ion-label>
+
+  <ion-item>
+    <ion-input placeholder="Examen" [(ngModel)]="EX"></ion-input>
+  </ion-item>
+  <ion-item>
+    <ion-button color="primary" (click)="Calculo()">Calcular</ion-button>
+  </ion-item>
+  <ion-item>
+    <ion-label>{{Calculo() | number:"1.0-2"}}</ion-label>
+  </ion-item>
+</ion-content>
