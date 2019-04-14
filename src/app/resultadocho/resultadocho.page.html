@@ -1,0 +1,51 @@
+<ion-header>
+    
+  <ion-toolbar color="primary">
+      <ion-buttons slot="start">
+          <ion-back-button
+          [text]="buttonText">
+      </ion-back-button>
+        </ion-buttons>
+    <ion-title>resultados</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+   
+  <ion-label color="light">Tu EPE1 es: {{epe1}}</ion-label><br><br>
+
+     
+      <ion-label color="light">Tu EPE2 es: {{epe2}}</ion-label><br><br>
+     
+     
+      <ion-label color="light">Tu EPE3 es: {{epe3}}</ion-label><br><br>
+
+
+      <ion-label color="light">Tu EPE4 es: {{epe4}}</ion-label><br><br>
+     
+     
+      <ion-label color="light">Tu EVA1 es: {{eva1}}</ion-label><br><br>
+     
+       
+      <ion-label color="light">Tu EVA2 es: {{eva2}}</ion-label><br><br>
+           
+     
+      <ion-label color="light">Tu EVA3 es: {{eva3}}</ion-label><br><br>
+     
+       
+      <ion-label color="light">Tu EVA4 es: {{eva4}}</ion-label><br><br>
+     
+ 
+   
+    <ion-label color="light">Tu Examen es: {{ex}}</ion-label><br><br>
+   
+   
+    <ion-label color="light">Tu Nota de presentacion es: <br>
+      {{prom | number:"1.0-1"}}</ion-label><br>
+   
+     
+    <ion-label color="light">Tu promedio final es: <br>
+      {{prueba | number:"1.0-1"}}<br>
+    {{b}}</ion-label>
+   
+</ion-content>
